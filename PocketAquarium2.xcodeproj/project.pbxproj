@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A04692D2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */; };
+		4A0C8E522176D71700D3EFB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C8E512176D71600D3EFB3 /* GoogleService-Info.plist */; };
+		4A10CAEC2179AE660097D209 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAEB2179AE660097D209 /* FishDetailViewController.swift */; };
+		4A10CAEE2179CE330097D209 /* FishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A10CAED2179CE330097D209 /* FishTableViewCell.swift */; };
+		4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0B216DB75A00A28042 /* AuthViewController.swift */; };
+		4A402B0E216DC00A00A28042 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0D216DC00A00A28042 /* HomeViewController.swift */; };
+		4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A402B0F216EF4A500A28042 /* AddFishViewController.swift */; };
+		4A5E13022171E13300279E66 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E13012171E13300279E66 /* util.swift */; };
+		4A5E13042172EFD300279E66 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E13032172EFD300279E66 /* ImageManager.swift */; };
+		4AA5CF40216F98820063B3E4 /* AddFish2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5CF3F216F98820063B3E4 /* AddFish2ViewController.swift */; };
+		4AA5CF42217028040063B3E4 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5CF41217028040063B3E4 /* Fish.swift */; };
+		7D9D457563106D9C3CEBBA85 /* Pods_Pocket_AquariumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5A822FEB52C94AEFEB6D60 /* Pods_Pocket_AquariumUITests.framework */; };
+		BADAD260733A10CE70D16557 /* Pods_Pocket_Aquarium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654E3B2A36B5D750E0A29BB3 /* Pods_Pocket_Aquarium.framework */; };
+		C2C8DB4C850F59E6E4DB0DAF /* Pods_Pocket_AquariumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960BC8E9044D639DEA4E7326 /* Pods_Pocket_AquariumTests.framework */; };
+		ED187B5B2186FA5400DFF6AB /* TrackMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED187B5A2186FA5400DFF6AB /* TrackMaintenanceViewController.swift */; };
+		ED187B5D2187068C00DFF6AB /* AddFinishedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED187B5C2187068C00DFF6AB /* AddFinishedTableViewController.swift */; };
+		ED2227AD218C18010010158F /* InitialSensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2227AC218C18010010158F /* InitialSensorManager.swift */; };
+		ED2227AF218DB0F70010158F /* DataStatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2227AE218DB0F70010158F /* DataStatisticViewController.swift */; };
+		ED2227B1218DB4F20010158F /* RealtimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2227B0218DB4F20010158F /* RealtimeTableViewCell.swift */; };
+		ED2227B3218DCE200010158F /* SelectTankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2227B2218DCE200010158F /* SelectTankTableViewController.swift */; };
+		ED48FFB82184C7C100D2E250 /* FishMembersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48FFB72184C7C100D2E250 /* FishMembersCollectionViewController.swift */; };
+		ED48FFBC2185D5AD00D2E250 /* CurrentFishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48FFBB2185D5AD00D2E250 /* CurrentFishListViewController.swift */; };
+		ED48FFBE2185D70D00D2E250 /* FishInTankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48FFBD2185D70D00D2E250 /* FishInTankTableViewCell.swift */; };
+		ED48FFC02185E51300D2E250 /* FishInTankTotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48FFBF2185E51300D2E250 /* FishInTankTotalTableViewCell.swift */; };
+		ED4BD21D218737AF008381A2 /* InitialTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD21C218737AF008381A2 /* InitialTaskTableViewCell.swift */; };
+		ED4BD21F21873A0D008381A2 /* SelectTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD21E21873A0D008381A2 /* SelectTimeTableViewCell.swift */; };
+		ED4BD2212187D273008381A2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD2202187D273008381A2 /* DatePickerViewController.swift */; };
+		ED4BD22321882E23008381A2 /* HistoryTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD22221882E23008381A2 /* HistoryTaskTableViewCell.swift */; };
+		ED4BD2252188AB6F008381A2 /* AddPendingTaskCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD2242188AB6F008381A2 /* AddPendingTaskCollectionViewController.swift */; };
+		ED4BD2272188ABBB008381A2 /* PendingTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD2262188ABBB008381A2 /* PendingTaskCollectionViewCell.swift */; };
+		ED4BD2292188AF7D008381A2 /* InitialTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD2282188AF7D008381A2 /* InitialTaskManager.swift */; };
+		ED8205602174A5810008AC46 /* FishTank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED82055F2174A5810008AC46 /* FishTank.swift */; };
+		ED8205622174A9B30008AC46 /* TankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8205612174A9B30008AC46 /* TankCollectionViewCell.swift */; };
+		ED8205642174B8B20008AC46 /* RealTimeValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8205632174B8B20008AC46 /* RealTimeValues.swift */; };
+		ED9B20F7218E65D100037F71 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B20F6218E65D100037F71 /* AboutTableViewController.swift */; };
+		EDA268B62175522C004384C5 /* AddNewTankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA268B52175522C004384C5 /* AddNewTankController.swift */; };
+		EDA268B821755ED7004384C5 /* SensorDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA268B721755ED7004384C5 /* SensorDevice.swift */; };
+		EDA268BB2175966F004384C5 /* SensorListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA268BA2175966F004384C5 /* SensorListTableViewController.swift */; };
+		EDA268BD2175A33D004384C5 /* SetEnvironmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA268BC2175A33D004384C5 /* SetEnvironmentViewController.swift */; };
+		EDA268BF2175E33B004384C5 /* UIViewCustomize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA268BE2175E33B004384C5 /* UIViewCustomize.swift */; };
+		EDA268C12175F410004384C5 /* FishImageLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA268C02175F410004384C5 /* FishImageLabelCollectionViewCell.swift */; };
+		EDB449632164AD09001EFBD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB449622164AD09001EFBD2 /* AppDelegate.swift */; };
+		EDB449682164AD09001EFBD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB449662164AD09001EFBD2 /* Main.storyboard */; };
+		EDB4496A2164AD0B001EFBD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB449692164AD0B001EFBD2 /* Assets.xcassets */; };
+		EDB4496D2164AD0B001EFBD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB4496B2164AD0B001EFBD2 /* LaunchScreen.storyboard */; };
+		EDB449782164AD0B001EFBD2 /* Pocket_AquariumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB449772164AD0B001EFBD2 /* Pocket_AquariumTests.swift */; };
+		EDB449832164AD0C001EFBD2 /* Pocket_AquariumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB449822164AD0C001EFBD2 /* Pocket_AquariumUITests.swift */; };
+		EDC724A2217F56A00064D548 /* DeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC724A1217F56A00064D548 /* DeviceCollectionViewCell.swift */; };
+		EDC724A6217FD7FB0064D548 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC724A5217FD7FB0064D548 /* TaskTableViewCell.swift */; };
+		EDC724A8218006520064D548 /* ColorTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC724A7218006520064D548 /* ColorTheme.xcassets */; };
+		EDC724AA21802E430064D548 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC724A921802E430064D548 /* Task.swift */; };
+		EDD05977218146CA008F52F0 /* FishRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD05976218146CA008F52F0 /* FishRepositoryViewController.swift */; };
+		EDF30B6A2182C84D004D55C6 /* PopUpFishSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF30B692182C84D004D55C6 /* PopUpFishSettingViewController.swift */; };
+		EDF30B6C2183E1EB004D55C6 /* FishCollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF30B6B2183E1EB004D55C6 /* FishCollectionReusableHeaderView.swift */; };
+		EDF30B702183E873004D55C6 /* AddFishToTankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF30B6F2183E873004D55C6 /* AddFishToTankCollectionViewCell.swift */; };
+		EDF8E5D8218A0E250042CE1F /* LocalNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8E5D7218A0E250042CE1F /* LocalNotificationDelegate.swift */; };
+		EDF8E5DA218B09440042CE1F /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF8E5D9218B09440042CE1F /* GeoLocation.swift */; };
+		EDFE279E217F041D008F2357 /* TankDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE279D217F041D008F2357 /* TankDetailTableViewController.swift */; };
+		EDFE27A2217F0856008F2357 /* FishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE27A1217F0856008F2357 /* FishCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDB449742164AD0B001EFBD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB449572164AD09001EFBD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDB4495E2164AD09001EFBD2;
+			remoteInfo = "Pocket Aquarium";
+		};
+		EDB4497F2164AD0C001EFBD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB449572164AD09001EFBD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDB4495E2164AD09001EFBD2;
+			remoteInfo = "Pocket Aquarium";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E5E05A994BAD8BB2FDBF0D5 /* Pods-Pocket Aquarium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Aquarium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Aquarium/Pods-Pocket Aquarium.debug.xcconfig"; sourceTree = "<group>"; };
+		35BB21CFA636A7EB462870DC /* Pods-Pocket Aquarium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Aquarium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Aquarium/Pods-Pocket Aquarium.release.xcconfig"; sourceTree = "<group>"; };
+		4996721E38187FF3A5EE76C9 /* Pods-Pocket AquariumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket AquariumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket AquariumUITests/Pods-Pocket AquariumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A0C8E512176D71600D3EFB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A10CAEB2179AE660097D209 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
+		4A10CAED2179CE330097D209 /* FishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewCell.swift; sourceTree = "<group>"; };
+		4A402B0B216DB75A00A28042 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		4A402B0D216DC00A00A28042 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A402B0F216EF4A500A28042 /* AddFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishViewController.swift; sourceTree = "<group>"; };
+		4A5E13012171E13300279E66 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		4A5E13032172EFD300279E66 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		4AA5CF3F216F98820063B3E4 /* AddFish2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFish2ViewController.swift; sourceTree = "<group>"; };
+		4AA5CF41217028040063B3E4 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		654E3B2A36B5D750E0A29BB3 /* Pods_Pocket_Aquarium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_Aquarium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CFF9E45F9576D1B3179E800 /* Pods-Pocket AquariumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket AquariumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket AquariumTests/Pods-Pocket AquariumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E7B9D09B2CAA4974BD5FEA5 /* Pods-Pocket AquariumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket AquariumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket AquariumUITests/Pods-Pocket AquariumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		960BC8E9044D639DEA4E7326 /* Pods_Pocket_AquariumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_AquariumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5A822FEB52C94AEFEB6D60 /* Pods_Pocket_AquariumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_AquariumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED187B5A2186FA5400DFF6AB /* TrackMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMaintenanceViewController.swift; sourceTree = "<group>"; };
+		ED187B5C2187068C00DFF6AB /* AddFinishedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFinishedTableViewController.swift; sourceTree = "<group>"; };
+		ED2227AC218C18010010158F /* InitialSensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSensorManager.swift; sourceTree = "<group>"; };
+		ED2227AE218DB0F70010158F /* DataStatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStatisticViewController.swift; sourceTree = "<group>"; };
+		ED2227B0218DB4F20010158F /* RealtimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTableViewCell.swift; sourceTree = "<group>"; };
+		ED2227B2218DCE200010158F /* SelectTankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTankTableViewController.swift; sourceTree = "<group>"; };
+		ED48FFB72184C7C100D2E250 /* FishMembersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishMembersCollectionViewController.swift; sourceTree = "<group>"; };
+		ED48FFBB2185D5AD00D2E250 /* CurrentFishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFishListViewController.swift; sourceTree = "<group>"; };
+		ED48FFBD2185D70D00D2E250 /* FishInTankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishInTankTableViewCell.swift; sourceTree = "<group>"; };
+		ED48FFBF2185E51300D2E250 /* FishInTankTotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishInTankTotalTableViewCell.swift; sourceTree = "<group>"; };
+		ED4BD21C218737AF008381A2 /* InitialTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTaskTableViewCell.swift; sourceTree = "<group>"; };
+		ED4BD21E21873A0D008381A2 /* SelectTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeTableViewCell.swift; sourceTree = "<group>"; };
+		ED4BD2202187D273008381A2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		ED4BD22221882E23008381A2 /* HistoryTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTaskTableViewCell.swift; sourceTree = "<group>"; };
+		ED4BD2242188AB6F008381A2 /* AddPendingTaskCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPendingTaskCollectionViewController.swift; sourceTree = "<group>"; };
+		ED4BD2262188ABBB008381A2 /* PendingTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingTaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED4BD2282188AF7D008381A2 /* InitialTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTaskManager.swift; sourceTree = "<group>"; };
+		ED82055F2174A5810008AC46 /* FishTank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTank.swift; sourceTree = "<group>"; };
+		ED8205612174A9B30008AC46 /* TankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED8205632174B8B20008AC46 /* RealTimeValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeValues.swift; sourceTree = "<group>"; };
+		ED9B20F6218E65D100037F71 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		EDA268B52175522C004384C5 /* AddNewTankController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTankController.swift; sourceTree = "<group>"; };
+		EDA268B721755ED7004384C5 /* SensorDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDevice.swift; sourceTree = "<group>"; };
+		EDA268BA2175966F004384C5 /* SensorListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorListTableViewController.swift; sourceTree = "<group>"; };
+		EDA268BC2175A33D004384C5 /* SetEnvironmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEnvironmentViewController.swift; sourceTree = "<group>"; };
+		EDA268BE2175E33B004384C5 /* UIViewCustomize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCustomize.swift; sourceTree = "<group>"; };
+		EDA268C02175F410004384C5 /* FishImageLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishImageLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		EDB4495F2164AD09001EFBD2 /* Pocket Aquarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Aquarium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB449622164AD09001EFBD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDB449672164AD09001EFBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDB449692164AD0B001EFBD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDB4496C2164AD0B001EFBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDB4496E2164AD0B001EFBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB449732164AD0B001EFBD2 /* Pocket AquariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket AquariumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB449772164AD0B001EFBD2 /* Pocket_AquariumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pocket_AquariumTests.swift; sourceTree = "<group>"; };
+		EDB449792164AD0C001EFBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB4497E2164AD0C001EFBD2 /* Pocket AquariumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket AquariumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB449822164AD0C001EFBD2 /* Pocket_AquariumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pocket_AquariumUITests.swift; sourceTree = "<group>"; };
+		EDB449842164AD0C001EFBD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC724A1217F56A00064D548 /* DeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCollectionViewCell.swift; sourceTree = "<group>"; };
+		EDC724A5217FD7FB0064D548 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		EDC724A7218006520064D548 /* ColorTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorTheme.xcassets; sourceTree = "<group>"; };
+		EDC724A921802E430064D548 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EDD05976218146CA008F52F0 /* FishRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishRepositoryViewController.swift; sourceTree = "<group>"; };
+		EDF30B692182C84D004D55C6 /* PopUpFishSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpFishSettingViewController.swift; sourceTree = "<group>"; };
+		EDF30B6B2183E1EB004D55C6 /* FishCollectionReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCollectionReusableHeaderView.swift; sourceTree = "<group>"; };
+		EDF30B6F2183E873004D55C6 /* AddFishToTankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishToTankCollectionViewCell.swift; sourceTree = "<group>"; };
+		EDF8E5D7218A0E250042CE1F /* LocalNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationDelegate.swift; sourceTree = "<group>"; };
+		EDF8E5D9218B09440042CE1F /* GeoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocation.swift; sourceTree = "<group>"; };
+		EDFE279D217F041D008F2357 /* TankDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailTableViewController.swift; sourceTree = "<group>"; };
+		EDFE27A1217F0856008F2357 /* FishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4CA296EE903B7B43215F06B /* Pods-Pocket AquariumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket AquariumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket AquariumTests/Pods-Pocket AquariumTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDB4495C2164AD09001EFBD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADAD260733A10CE70D16557 /* Pods_Pocket_Aquarium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB449702164AD0B001EFBD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C8DB4C850F59E6E4DB0DAF /* Pods_Pocket_AquariumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB4497B2164AD0C001EFBD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9D457563106D9C3CEBBA85 /* Pods_Pocket_AquariumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		123906798C6BEEA36876C50D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654E3B2A36B5D750E0A29BB3 /* Pods_Pocket_Aquarium.framework */,
+				960BC8E9044D639DEA4E7326 /* Pods_Pocket_AquariumTests.framework */,
+				AF5A822FEB52C94AEFEB6D60 /* Pods_Pocket_AquariumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		883FFD7FD550FFAA2F722B31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E5E05A994BAD8BB2FDBF0D5 /* Pods-Pocket Aquarium.debug.xcconfig */,
+				35BB21CFA636A7EB462870DC /* Pods-Pocket Aquarium.release.xcconfig */,
+				7CFF9E45F9576D1B3179E800 /* Pods-Pocket AquariumTests.debug.xcconfig */,
+				F4CA296EE903B7B43215F06B /* Pods-Pocket AquariumTests.release.xcconfig */,
+				4996721E38187FF3A5EE76C9 /* Pods-Pocket AquariumUITests.debug.xcconfig */,
+				7E7B9D09B2CAA4974BD5FEA5 /* Pods-Pocket AquariumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED82055A2174A4630008AC46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A10CAED2179CE330097D209 /* FishTableViewCell.swift */,
+				4A04692C2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift */,
+				4A5E13012171E13300279E66 /* util.swift */,
+				ED8205612174A9B30008AC46 /* TankCollectionViewCell.swift */,
+				EDA268BE2175E33B004384C5 /* UIViewCustomize.swift */,
+				EDA268C02175F410004384C5 /* FishImageLabelCollectionViewCell.swift */,
+				EDFE27A1217F0856008F2357 /* FishCollectionViewCell.swift */,
+				EDC724A1217F56A00064D548 /* DeviceCollectionViewCell.swift */,
+				EDC724A5217FD7FB0064D548 /* TaskTableViewCell.swift */,
+				EDF30B6B2183E1EB004D55C6 /* FishCollectionReusableHeaderView.swift */,
+				EDF30B6F2183E873004D55C6 /* AddFishToTankCollectionViewCell.swift */,
+				ED48FFBD2185D70D00D2E250 /* FishInTankTableViewCell.swift */,
+				ED48FFBF2185E51300D2E250 /* FishInTankTotalTableViewCell.swift */,
+				ED4BD21C218737AF008381A2 /* InitialTaskTableViewCell.swift */,
+				ED4BD21E21873A0D008381A2 /* SelectTimeTableViewCell.swift */,
+				ED4BD22221882E23008381A2 /* HistoryTaskTableViewCell.swift */,
+				ED4BD2262188ABBB008381A2 /* PendingTaskCollectionViewCell.swift */,
+				ED2227B0218DB4F20010158F /* RealtimeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED82055B2174A4680008AC46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDD05976218146CA008F52F0 /* FishRepositoryViewController.swift */,
+				4A402B0B216DB75A00A28042 /* AuthViewController.swift */,
+				4A402B0D216DC00A00A28042 /* HomeViewController.swift */,
+				4A402B0F216EF4A500A28042 /* AddFishViewController.swift */,
+				4AA5CF3F216F98820063B3E4 /* AddFish2ViewController.swift */,
+				EDA268B52175522C004384C5 /* AddNewTankController.swift */,
+				EDA268BA2175966F004384C5 /* SensorListTableViewController.swift */,
+				EDA268BC2175A33D004384C5 /* SetEnvironmentViewController.swift */,
+				4A10CAEB2179AE660097D209 /* FishDetailViewController.swift */,
+				EDFE279D217F041D008F2357 /* TankDetailTableViewController.swift */,
+				EDF30B692182C84D004D55C6 /* PopUpFishSettingViewController.swift */,
+				ED48FFB72184C7C100D2E250 /* FishMembersCollectionViewController.swift */,
+				ED48FFBB2185D5AD00D2E250 /* CurrentFishListViewController.swift */,
+				ED187B5A2186FA5400DFF6AB /* TrackMaintenanceViewController.swift */,
+				ED187B5C2187068C00DFF6AB /* AddFinishedTableViewController.swift */,
+				ED4BD2202187D273008381A2 /* DatePickerViewController.swift */,
+				ED4BD2242188AB6F008381A2 /* AddPendingTaskCollectionViewController.swift */,
+				EDF8E5D7218A0E250042CE1F /* LocalNotificationDelegate.swift */,
+				ED2227AE218DB0F70010158F /* DataStatisticViewController.swift */,
+				ED2227B2218DCE200010158F /* SelectTankTableViewController.swift */,
+				ED9B20F6218E65D100037F71 /* AboutTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED82055C2174A4710008AC46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AA5CF41217028040063B3E4 /* Fish.swift */,
+				ED82055F2174A5810008AC46 /* FishTank.swift */,
+				ED8205632174B8B20008AC46 /* RealTimeValues.swift */,
+				EDA268B721755ED7004384C5 /* SensorDevice.swift */,
+				EDC724A921802E430064D548 /* Task.swift */,
+				EDF8E5D9218B09440042CE1F /* GeoLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED82055E2174A4B90008AC46 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				4A5E13032172EFD300279E66 /* ImageManager.swift */,
+				ED4BD2282188AF7D008381A2 /* InitialTaskManager.swift */,
+				ED2227AC218C18010010158F /* InitialSensorManager.swift */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		EDB449562164AD09001EFBD2 = {
+			isa = PBXGroup;
+			children = (
+				EDB449612164AD09001EFBD2 /* Pocket Aquarium */,
+				EDB449762164AD0B001EFBD2 /* Pocket AquariumTests */,
+				EDB449812164AD0C001EFBD2 /* Pocket AquariumUITests */,
+				EDB449602164AD09001EFBD2 /* Products */,
+				883FFD7FD550FFAA2F722B31 /* Pods */,
+				123906798C6BEEA36876C50D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDB449602164AD09001EFBD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDB4495F2164AD09001EFBD2 /* Pocket Aquarium.app */,
+				EDB449732164AD0B001EFBD2 /* Pocket AquariumTests.xctest */,
+				EDB4497E2164AD0C001EFBD2 /* Pocket AquariumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDB449612164AD09001EFBD2 /* Pocket Aquarium */ = {
+			isa = PBXGroup;
+			children = (
+				ED82055E2174A4B90008AC46 /* DBManager */,
+				ED82055C2174A4710008AC46 /* Model */,
+				ED82055B2174A4680008AC46 /* Controller */,
+				ED82055A2174A4630008AC46 /* View */,
+				EDB449622164AD09001EFBD2 /* AppDelegate.swift */,
+				EDB449662164AD09001EFBD2 /* Main.storyboard */,
+				EDB449692164AD0B001EFBD2 /* Assets.xcassets */,
+				EDB4496B2164AD0B001EFBD2 /* LaunchScreen.storyboard */,
+				4A0C8E512176D71600D3EFB3 /* GoogleService-Info.plist */,
+				EDB4496E2164AD0B001EFBD2 /* Info.plist */,
+				EDC724A7218006520064D548 /* ColorTheme.xcassets */,
+			);
+			path = "Pocket Aquarium";
+			sourceTree = "<group>";
+		};
+		EDB449762164AD0B001EFBD2 /* Pocket AquariumTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDB449772164AD0B001EFBD2 /* Pocket_AquariumTests.swift */,
+				EDB449792164AD0C001EFBD2 /* Info.plist */,
+			);
+			path = "Pocket AquariumTests";
+			sourceTree = "<group>";
+		};
+		EDB449812164AD0C001EFBD2 /* Pocket AquariumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDB449822164AD0C001EFBD2 /* Pocket_AquariumUITests.swift */,
+				EDB449842164AD0C001EFBD2 /* Info.plist */,
+			);
+			path = "Pocket AquariumUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDB4495E2164AD09001EFBD2 /* Pocket Aquarium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB449872164AD0C001EFBD2 /* Build configuration list for PBXNativeTarget "Pocket Aquarium" */;
+			buildPhases = (
+				8055A08013FB1DBCA4C7B79E /* [CP] Check Pods Manifest.lock */,
+				EDB4495B2164AD09001EFBD2 /* Sources */,
+				EDB4495C2164AD09001EFBD2 /* Frameworks */,
+				EDB4495D2164AD09001EFBD2 /* Resources */,
+				6F965C0AC50EABB1664BB7FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pocket Aquarium";
+			productName = "Pocket Aquarium";
+			productReference = EDB4495F2164AD09001EFBD2 /* Pocket Aquarium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDB449722164AD0B001EFBD2 /* Pocket AquariumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB4498A2164AD0C001EFBD2 /* Build configuration list for PBXNativeTarget "Pocket AquariumTests" */;
+			buildPhases = (
+				5DCADA96B2996BD5366CCE5D /* [CP] Check Pods Manifest.lock */,
+				EDB4496F2164AD0B001EFBD2 /* Sources */,
+				EDB449702164AD0B001EFBD2 /* Frameworks */,
+				EDB449712164AD0B001EFBD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDB449752164AD0B001EFBD2 /* PBXTargetDependency */,
+			);
+			name = "Pocket AquariumTests";
+			productName = "Pocket AquariumTests";
+			productReference = EDB449732164AD0B001EFBD2 /* Pocket AquariumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDB4497D2164AD0C001EFBD2 /* Pocket AquariumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB4498D2164AD0C001EFBD2 /* Build configuration list for PBXNativeTarget "Pocket AquariumUITests" */;
+			buildPhases = (
+				F4E8551B15E6CB5B20DB55FA /* [CP] Check Pods Manifest.lock */,
+				EDB4497A2164AD0C001EFBD2 /* Sources */,
+				EDB4497B2164AD0C001EFBD2 /* Frameworks */,
+				EDB4497C2164AD0C001EFBD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDB449802164AD0C001EFBD2 /* PBXTargetDependency */,
+			);
+			name = "Pocket AquariumUITests";
+			productName = "Pocket AquariumUITests";
+			productReference = EDB4497E2164AD0C001EFBD2 /* Pocket AquariumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDB449572164AD09001EFBD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Monash University";
+				TargetAttributes = {
+					EDB4495E2164AD09001EFBD2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EDB449722164AD0B001EFBD2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EDB4495E2164AD09001EFBD2;
+					};
+					EDB4497D2164AD0C001EFBD2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EDB4495E2164AD09001EFBD2;
+					};
+				};
+			};
+			buildConfigurationList = EDB4495A2164AD09001EFBD2 /* Build configuration list for PBXProject "PocketAquarium2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDB449562164AD09001EFBD2;
+			productRefGroup = EDB449602164AD09001EFBD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDB4495E2164AD09001EFBD2 /* Pocket Aquarium */,
+				EDB449722164AD0B001EFBD2 /* Pocket AquariumTests */,
+				EDB4497D2164AD0C001EFBD2 /* Pocket AquariumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDB4495D2164AD09001EFBD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC724A8218006520064D548 /* ColorTheme.xcassets in Resources */,
+				EDB4496D2164AD0B001EFBD2 /* LaunchScreen.storyboard in Resources */,
+				4A0C8E522176D71700D3EFB3 /* GoogleService-Info.plist in Resources */,
+				EDB4496A2164AD0B001EFBD2 /* Assets.xcassets in Resources */,
+				EDB449682164AD09001EFBD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB449712164AD0B001EFBD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB4497C2164AD0C001EFBD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DCADA96B2996BD5366CCE5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pocket AquariumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F965C0AC50EABB1664BB7FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pocket Aquarium/Pods-Pocket Aquarium-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pocket Aquarium/Pods-Pocket Aquarium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8055A08013FB1DBCA4C7B79E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pocket Aquarium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E8551B15E6CB5B20DB55FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pocket AquariumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDB4495B2164AD09001EFBD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A402B10216EF4A500A28042 /* AddFishViewController.swift in Sources */,
+				ED4BD22321882E23008381A2 /* HistoryTaskTableViewCell.swift in Sources */,
+				EDA268C12175F410004384C5 /* FishImageLabelCollectionViewCell.swift in Sources */,
+				ED4BD2272188ABBB008381A2 /* PendingTaskCollectionViewCell.swift in Sources */,
+				ED8205602174A5810008AC46 /* FishTank.swift in Sources */,
+				4AA5CF42217028040063B3E4 /* Fish.swift in Sources */,
+				EDF30B6C2183E1EB004D55C6 /* FishCollectionReusableHeaderView.swift in Sources */,
+				EDF8E5D8218A0E250042CE1F /* LocalNotificationDelegate.swift in Sources */,
+				4A10CAEE2179CE330097D209 /* FishTableViewCell.swift in Sources */,
+				4A402B0C216DB75A00A28042 /* AuthViewController.swift in Sources */,
+				EDFE279E217F041D008F2357 /* TankDetailTableViewController.swift in Sources */,
+				ED9B20F7218E65D100037F71 /* AboutTableViewController.swift in Sources */,
+				ED4BD21D218737AF008381A2 /* InitialTaskTableViewCell.swift in Sources */,
+				ED2227AD218C18010010158F /* InitialSensorManager.swift in Sources */,
+				ED8205642174B8B20008AC46 /* RealTimeValues.swift in Sources */,
+				4A5E13022171E13300279E66 /* util.swift in Sources */,
+				ED187B5B2186FA5400DFF6AB /* TrackMaintenanceViewController.swift in Sources */,
+				EDB449632164AD09001EFBD2 /* AppDelegate.swift in Sources */,
+				EDA268BD2175A33D004384C5 /* SetEnvironmentViewController.swift in Sources */,
+				ED4BD2212187D273008381A2 /* DatePickerViewController.swift in Sources */,
+				EDC724A6217FD7FB0064D548 /* TaskTableViewCell.swift in Sources */,
+				EDF30B702183E873004D55C6 /* AddFishToTankCollectionViewCell.swift in Sources */,
+				EDC724AA21802E430064D548 /* Task.swift in Sources */,
+				ED48FFC02185E51300D2E250 /* FishInTankTotalTableViewCell.swift in Sources */,
+				ED187B5D2187068C00DFF6AB /* AddFinishedTableViewController.swift in Sources */,
+				ED4BD2252188AB6F008381A2 /* AddPendingTaskCollectionViewController.swift in Sources */,
+				ED48FFB82184C7C100D2E250 /* FishMembersCollectionViewController.swift in Sources */,
+				4A10CAEC2179AE660097D209 /* FishDetailViewController.swift in Sources */,
+				EDA268B821755ED7004384C5 /* SensorDevice.swift in Sources */,
+				ED2227B1218DB4F20010158F /* RealtimeTableViewCell.swift in Sources */,
+				EDA268B62175522C004384C5 /* AddNewTankController.swift in Sources */,
+				ED4BD2292188AF7D008381A2 /* InitialTaskManager.swift in Sources */,
+				ED8205622174A9B30008AC46 /* TankCollectionViewCell.swift in Sources */,
+				ED48FFBE2185D70D00D2E250 /* FishInTankTableViewCell.swift in Sources */,
+				4A04692D2171B50F0042EA61 /* AddFishImageCollectionViewCell.swift in Sources */,
+				ED48FFBC2185D5AD00D2E250 /* CurrentFishListViewController.swift in Sources */,
+				ED2227AF218DB0F70010158F /* DataStatisticViewController.swift in Sources */,
+				EDA268BB2175966F004384C5 /* SensorListTableViewController.swift in Sources */,
+				EDD05977218146CA008F52F0 /* FishRepositoryViewController.swift in Sources */,
+				4A402B0E216DC00A00A28042 /* HomeViewController.swift in Sources */,
+				ED2227B3218DCE200010158F /* SelectTankTableViewController.swift in Sources */,
+				EDF30B6A2182C84D004D55C6 /* PopUpFishSettingViewController.swift in Sources */,
+				4AA5CF40216F98820063B3E4 /* AddFish2ViewController.swift in Sources */,
+				EDC724A2217F56A00064D548 /* DeviceCollectionViewCell.swift in Sources */,
+				EDFE27A2217F0856008F2357 /* FishCollectionViewCell.swift in Sources */,
+				4A5E13042172EFD300279E66 /* ImageManager.swift in Sources */,
+				EDF8E5DA218B09440042CE1F /* GeoLocation.swift in Sources */,
+				ED4BD21F21873A0D008381A2 /* SelectTimeTableViewCell.swift in Sources */,
+				EDA268BF2175E33B004384C5 /* UIViewCustomize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB4496F2164AD0B001EFBD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB449782164AD0B001EFBD2 /* Pocket_AquariumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB4497A2164AD0C001EFBD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB449832164AD0C001EFBD2 /* Pocket_AquariumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDB449752164AD0B001EFBD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDB4495E2164AD09001EFBD2 /* Pocket Aquarium */;
+			targetProxy = EDB449742164AD0B001EFBD2 /* PBXContainerItemProxy */;
+		};
+		EDB449802164AD0C001EFBD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDB4495E2164AD09001EFBD2 /* Pocket Aquarium */;
+			targetProxy = EDB4497F2164AD0C001EFBD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDB449662164AD09001EFBD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB449672164AD09001EFBD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDB4496B2164AD0B001EFBD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB4496C2164AD0B001EFBD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDB449852164AD0C001EFBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDB449862164AD0C001EFBD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDB449882164AD0C001EFBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5E05A994BAD8BB2FDBF0D5 /* Pods-Pocket Aquarium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ46QJZVMV;
+				INFOPLIST_FILE = "Pocket Aquarium/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Monash.5140PocketAquarium2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDB449892164AD0C001EFBD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BB21CFA636A7EB462870DC /* Pods-Pocket Aquarium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ46QJZVMV;
+				INFOPLIST_FILE = "Pocket Aquarium/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Monash.5140PocketAquarium2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDB4498B2164AD0C001EFBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CFF9E45F9576D1B3179E800 /* Pods-Pocket AquariumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6329YM3996;
+				INFOPLIST_FILE = "Pocket AquariumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.Pocket-AquariumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocket Aquarium.app/Pocket Aquarium";
+			};
+			name = Debug;
+		};
+		EDB4498C2164AD0C001EFBD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4CA296EE903B7B43215F06B /* Pods-Pocket AquariumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6329YM3996;
+				INFOPLIST_FILE = "Pocket AquariumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.Pocket-AquariumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocket Aquarium.app/Pocket Aquarium";
+			};
+			name = Release;
+		};
+		EDB4498E2164AD0C001EFBD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4996721E38187FF3A5EE76C9 /* Pods-Pocket AquariumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6329YM3996;
+				INFOPLIST_FILE = "Pocket AquariumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.Pocket-AquariumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pocket Aquarium";
+			};
+			name = Debug;
+		};
+		EDB4498F2164AD0C001EFBD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7B9D09B2CAA4974BD5FEA5 /* Pods-Pocket AquariumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6329YM3996;
+				INFOPLIST_FILE = "Pocket AquariumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.Pocket-AquariumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pocket Aquarium";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDB4495A2164AD09001EFBD2 /* Build configuration list for PBXProject "PocketAquarium2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB449852164AD0C001EFBD2 /* Debug */,
+				EDB449862164AD0C001EFBD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB449872164AD0C001EFBD2 /* Build configuration list for PBXNativeTarget "Pocket Aquarium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB449882164AD0C001EFBD2 /* Debug */,
+				EDB449892164AD0C001EFBD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB4498A2164AD0C001EFBD2 /* Build configuration list for PBXNativeTarget "Pocket AquariumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB4498B2164AD0C001EFBD2 /* Debug */,
+				EDB4498C2164AD0C001EFBD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB4498D2164AD0C001EFBD2 /* Build configuration list for PBXNativeTarget "Pocket AquariumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB4498E2164AD0C001EFBD2 /* Debug */,
+				EDB4498F2164AD0C001EFBD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDB449572164AD09001EFBD2 /* Project object */;
+}
